@@ -2,8 +2,6 @@ let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
 
-// Write your code below:
-
 // A function to generate random Target Number
 const generateTarget = () => targetNumber = Math.floor(Math.random() * 10);
 
@@ -30,14 +28,6 @@ function compareGuesses (humanGuess, computerGuess, target) {
         return false;
     }
 }
-
-// Testing Code
-/*
-console.log(generateTarget());
-console.log(compareGuesses(9, 9, generateTarget()));
-*/
-
-
 // This function will update the player's score. Each player scores one each game they win.
 const updateScore = winner => {
     if (winner === 'human') {
